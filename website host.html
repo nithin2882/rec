@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>form</title>
+</head>
+<link rel="stylesheet" href="style.css" />
+
+<body>
+    <div>
+        <br />
+        <center>
+            <h3 class="h3style">RAJALAKSHMI COLLEGE REGISTRATION</h3><br />
+            <img src="rec.jpe" />
+            <form>
+                Name:
+                <input type="text" placeholder="enter your name" /><br /><br />
+                Address:
+                <input type="email" placeholder="enter your email address" /><br /><br>
+                Phone Number:
+                <input type="phone" placeholder="enter your mobile number" /><br /><br />
+                Gender:
+                <input type="radio" value="male" name="gender" />male
+                <input type="radio" value="female" name="gender" />female<br /><br />
+                Select your Date of Birth:
+                <select>
+                    <option value="apr">apr</option>
+                    <option value="may">may</option>
+                    <option value="june">june</option>
+                    <option value="july">july</option>
+                    <option value="aug">aug</option>
+                    <option value="sep">sep</option>
+                    <option value="oct">oct</option>
+                    <option value="nov">nov</option>
+                    <option value="dec">dec</option>
+                </select><br /><br />
+                Hobby:
+                <input type="checkbox" value="cricket" name="hobby" />playing cricket
+                <input type="checkbox" value="books" name="hobby" />reading books
+                <input type="checkbox" value="dance" name="hobby" />dancing
+                <input type="checkbox" value="calisthenics" name="hobby" />calisthenics<br /><br />
+                <input type="button" value="submit" />
+            </form>
+            <center />
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+<?php
+if($_SERVER["REQUEST_METHOD"] =="POST")
+{
+    $name = $_POST['frame'];
+    echo $name;
+}
+?>
